@@ -12,7 +12,7 @@ jobs:
       fail-fast: false
     
     env:
-      GIT_TOKEN: "YOUR_PAT_TOKEN"
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
     
     steps:
       - name: Compiling Makefile
